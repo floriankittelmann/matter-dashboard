@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Alex Andonie">
 
-    <title>Booking</title>
+    <title>Inspiration</title>
 
     <!--<meta name="description" content="Matter is a material design system built on top of the latest version of bootstrap. It's released under MIT so you can do whatever you want with it.">
 
@@ -25,18 +25,12 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.0.0/css/perfect-scrollbar.min.css">
-    <style>
-        .reiseplanungstool .background-picture {
-            background-image: url(https://colorlib.com/etc/bforms/colorlib-booking-19/img/background.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
+    
 </head>
 
-<body class="reiseplanungstool reiseplanungstool-onepage">
+<body class="reiseplanungstool">
 
-    <div class="background-picture">
+    <div>
         <header class="header">
             <div class="header-navbar header-navbar-has-shadow">
                 <div class="header-navbar-details">
@@ -192,7 +186,7 @@
                     <ul class="nav nav-pills flex-column">
 
                         <li class="nav-item">
-                            <a class="nav-link align-items-center active" href="/booking">
+                            <a class="nav-link align-items-center" href="/booking">
                                 <i class="zmdi zmdi-card-travel icon icon-md " aria-hidden="true"></i><br>
                                 <p>Buchungen</p>
                             </a>
@@ -206,7 +200,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link align-items-center" href="/reiseplanung">
+                            <a class="nav-link align-items-center active" href="/reiseplanung">
                                 <i class="zmdi zmdi-map icon icon-md" aria-hidden="true"></i>
                                 <p>Reiseplanung</p>
                             </a>
@@ -244,108 +238,13 @@
                     <div class="col-1"></div>
 
                     <div class="col-11 col-md-4">
-                        <h1 class="title-color">BOOK YOUR TRAVEL</h1>
-                        <p>Here can be some awesome text</p>
+                        <h1 class="title-color">Reiseplanung</h1>
+                        <p>Links werden die verschiedenen Steps angezeigt</p>
                     </div>
 
                     <div class="col-11 col-md-6">
-                        <div class="card">
-
-                            <div class="card-body">
-
-                                <div class="booking-form">
-                                    <form>
-
-                                        <div class="form-group">
-                                            <div class="form-checkbox">
-                                                <label for="roundtrip">
-                                                    <input type="radio" id="roundtrip" name="flight-type">
-                                                    <span></span>Roundtrip
-                                                </label>
-                                                <label for="one-way">
-                                                    <input type="radio" id="one-way" name="flight-type">
-                                                    <span></span>One way
-                                                </label>
-                                                <label for="multi-city">
-                                                    <input type="radio" id="multi-city" name="flight-type">
-                                                    <span></span>Multi-City
-                                                </label>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group form-group-label-inside">
-                                                    <label for="nameExample1">Flying from</label>
-                                                    <input type="text" class="form-control" id="nameExample1" placeholder="City or airport">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group form-group-label-inside">
-                                                    <label for="nameExample1">Flyning to</label>
-                                                    <input type="text" class="form-control" id="nameExample1" placeholder="City or airport">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group form-group-label-inside">
-                                                    <label for="nameExample1">Departing</label>
-                                                    <input type="date" class="form-control" id="nameExample1" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group form-group-label-inside">
-                                                    <label for="nameExample1">Returning</label>
-                                                    <input type="date" class="form-control" id="nameExample1" required="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <span class="form-label">Adults (18+)</span>
-                                                    <select class="form-control">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                    </select>
-                                                    <span class="select-arrow"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <span class="form-label">Children (0-17)</span>
-                                                    <select class="form-control">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                    </select>
-                                                    <span class="select-arrow"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <span class="form-label">Travel class</span>
-                                                    <select class="form-control">
-                                                        <option>Economy class</option>
-                                                        <option>Business class</option>
-                                                        <option>First class</option>
-                                                    </select>
-                                                    <span class="select-arrow"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-btn">
-                                            <button type="button" class="btn btn-primary btn-block">Show flights</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                
-                            </div>
-
-                        </div>
+                        
+                        
 
                     </div>
 
