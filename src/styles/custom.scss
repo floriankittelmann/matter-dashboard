@@ -131,3 +131,29 @@
     color: #4fa3e3;
 }
 
+/** fix navigation top */
+.reiseplanungstool .header-billboard-inner {
+    position: sticky!important;
+    top: 0!important;
+}
+
+
+/*.reiseplanungstool .sidebar-fixed.sidebar-fixed-custom {
+    top: 136px;
+}*/
+
+.reiseplanungstool .container-main-for-search-windows {
+    @include media-breakpoint-up(xl) {
+      width: calc(100% - #{$sidebar-width-search-window});
+      transform: translateX($sidebar-width-search-window);
+    }
+  }
+.reiseplanungstool .container-main-for-search-windows-header{
+    @include media-breakpoint-up(xl) {
+        transform: translateX($sidebar-width-search-window-header);
+    }
+}
+.reiseplanungstool .stickysearchmask .card {
+    height: calc(100vh - 170px);
+}
+

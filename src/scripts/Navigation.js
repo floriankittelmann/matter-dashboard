@@ -4,8 +4,10 @@ class Navigation {
     this.toggleButtons = document.querySelectorAll('[data-toggle="sidebar"]');
     this.sidebar = document.querySelector('.sidebar');
     this.mainContent = document.querySelectorAll('.container-main');
+    this.headerPicture = document.querySelector('.header-billboard');
     this.sidebarOpenClass = 'sidebar-open';
     this.sidebarFixedClass = 'sidebar-fixed';
+    this.headerPictureFixed = 'header-billboard-fixed';
     this.mainContentOpenClass = 'container-main-full';
     this.scrollDisabledClass = 'scroll-disabled';
     this.desktopBreakpoint = 1200;
@@ -43,7 +45,7 @@ class Navigation {
     const headerBillboard = document.querySelector('.header-billboard');
 
     this.win.addEventListener('scroll', () => {
-      if (this.win.pageYOffset >= headerBillboard.offsetHeight) {
+      if (this.win.pageYOffset >= headerBillboard.offsetHeight - 35 ) {
         this.sidebar.classList.add(this.sidebarFixedClass);
         this.headerNavBar.classList.add(this.headerShadowClass);
       } else {
